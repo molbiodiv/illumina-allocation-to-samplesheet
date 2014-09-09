@@ -33,6 +33,8 @@ close IN or die "$!";
 }
 
 open IN, "<$ARGV[0]" or die "$!";
+# Discard first line:
+<IN>;
 while(<IN>){
     chop;
     my @row = split(/\t/);
