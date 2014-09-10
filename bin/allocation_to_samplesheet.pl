@@ -18,7 +18,7 @@ my %seqs;
 open IN, "<$ARGV[1]" or die "$!";
 while(<IN>){
     chomp;
-    my ($sid, $seq) = split(/\t/);
+    my ($sid, $seq) = split(/,/);
     $seqs{$sid} = $seq;
 }
 close IN or die "$!";
@@ -37,7 +37,7 @@ open IN, "<$ARGV[0]" or die "$!";
 <IN>;
 while(<IN>){
     chop;
-    my @row = split(/\t/);
+    my @row = split(/,/);
     # Not a header row (first and tenth cell contain reverse primers)
     if($row[0]){
 	my $rev = $row[0];
