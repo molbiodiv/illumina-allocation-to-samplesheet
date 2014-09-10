@@ -71,7 +71,7 @@ for(my $p=1; $p<5; $p++){
     foreach my $r (sort keys %{$sample{$p}}){
 	foreach my $c (sort {$a <=> $b} keys %{$sample{$p}{$r}}){
 	    my ($id, $f, $re) = @{$sample{$p}{$r}{$c}};
-	    print "$id\t$id\t$p\t$c$r\t$re\t$seqs{$re}\t$f\t$seqs{$f}\tproject\tdescription\n";
+	    print "$id,$id,$p,$c$r,$re,$seqs{$re},$f,$seqs{$f},project,description\n";
 	}
     }
 }
