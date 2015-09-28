@@ -43,7 +43,7 @@ while(<IN>){
 	my $rev = $row[0];
 	my $col = 1;
 	my $plateadd = 0;
-	for(my $c=1; $c<19; $c++){
+	for(my $c=1; $c<17; $c++){
 	    if($c==9){
 		$rev = $row[$c];
 		$col = 1;
