@@ -7,7 +7,7 @@ use Data::Dumper;
 
 $Data::Dumper::Sortkeys = 1;
 
-my @letters = ("A","B","C","D","E","F","G","H","I");
+my @letters = ("A","B","C","D","E","F","G","H","I","J");
 my $col = 1;
 my $row = 1;
 my $plate = 0;
@@ -43,7 +43,7 @@ while(<IN>){
 	my $rev = $row[0];
 	my $col = 1;
 	my $plateadd = 0;
-	for(my $c=1; $c<17; $c++){
+	for(my $c=1; $c<20; $c++){
 	    if($c==9){
 		$rev = $row[$c];
 		$col = 1;
