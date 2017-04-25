@@ -43,7 +43,7 @@ while(<IN>){
 	my $rev = $row[0];
 	my $col = 1;
 	my $plateadd = 0;
-	for(my $c=1; $c<20; $c++){
+	for(my $c=1; $c<18; $c++){
 	    if($c==9){
 		$rev = $row[$c];
 		$col = 1;
@@ -76,4 +76,4 @@ for(my $p=1; $p<5; $p++){
     }
 }
 
-# print Dumper(\%sample);
+#print Dumper(\%sample);
