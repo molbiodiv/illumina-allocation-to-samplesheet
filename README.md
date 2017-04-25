@@ -1,6 +1,11 @@
 # Illumina allocation to samplesheet
 Helper script to transform an allocation sheet into a samplesheet
 
+## Info
+This repo contains a single script which is mainly for internal usage.
+Therefore it is not very well documented.
+But if you want to reuse it, feel free to do it (MIT License).
+
 ## Important notes
 Some things you should keep in mind:
  - The first line of the allocation sheet is discarded so the second line should have the barcode IDs for the columns (see [data/example_allocation.csv](example_allocation))
