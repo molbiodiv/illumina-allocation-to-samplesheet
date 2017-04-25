@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use Data::Dumper;
 
-# USAGE: perl allocation_to_samplesheet.pl <allocation.tsv> <barcode.tsv> [header.tsv] >samplesheet.tsv
+# USAGE: perl allocation_to_samplesheet.pl <allocation.csv> <barcode.csv> [header.csv] >samplesheet.csv
 
 $Data::Dumper::Sortkeys = 1;
 
