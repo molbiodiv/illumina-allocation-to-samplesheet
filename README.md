@@ -6,6 +6,12 @@ This repo contains a single script which is mainly for internal usage.
 Therefore it is not very well documented.
 But if you want to reuse it, feel free to do it (MIT License).
 
+## Usage
+```
+perl allocation_to_samplesheet.pl <allocation.csv> <barcode.csv> [header.csv] >samplesheet.csv
+```
+You can find barcode and header files as well as an example allocation and samplesheet in the [data](data) folder.
+
 ## Important notes
 Some things you should keep in mind:
  - The first line of the allocation sheet is discarded so the second line should have the barcode IDs for the columns (see [data/example_allocation.csv](example_allocation))
